@@ -54,6 +54,7 @@ export class AutoCompleteComponent implements OnInit {
         this.selectedProduct$.next(product);
     }
 
+    
     public onKeyDown() {
         this.isSearchDisabled = false;
     }
