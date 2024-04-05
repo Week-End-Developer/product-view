@@ -34,7 +34,7 @@ export class AutoCompleteComponent implements OnInit {
             switchMap((term) => {
                 this.isLoading = true;
                 if (!this.isSearchDisabled)
-                    return this.autoCompleteService.getProducts(term)
+                    return this.autoCompleteService.getProducts(term);
                 else
                     return [];
             })
